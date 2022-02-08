@@ -4,6 +4,8 @@
 
 >  The site consists of a PlayStation store, which is featuring a PS5 DualShock controller purchase page.
 
+Confira a aplicação: https://kayke-fujinaka.github.io/PlayStation-Store/
+
 ## 🚀 Technologies
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
