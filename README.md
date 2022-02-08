@@ -1,8 +1,17 @@
 # PlayStation Store
 
-<img src="./img/PlayStation.png" alt="PlayStation Store Page">
+<img src="./img/PlayStation.png" width="450px" alt="PlayStation Store Page">
 
 >  The site consists of a PlayStation store, which is featuring a PS5 DualShock controller purchase page.
+
+## 🚀 Technologies
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML5
+- CSS3
+- JavaScript
+- MediaQuery
 
 ## 🤝 Colaboradores
 
