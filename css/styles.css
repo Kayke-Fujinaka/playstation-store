@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(251, 82, 131, 1) 100%);
+    display: flex;
+    justify-content: center; /* Eixo X */
+    align-items: center; /* Eixo Y */
+    height: 100%;
+}
+
+/* ---------------------- TOP ---------------------- */
+
+.container-main {
+    margin: 3%;
+    width: 80%; /* Ocupar o espaço da tela em largura*/
+    box-shadow: 0 0 1rem 0 rgb(0, 0, 0, 0.2); /* Sombra em volta da imagem */
+    border-radius: 20px; /* Borda redondinha */
+    background-color: #FFFFFF; /* Cor do fundo */
+    display: flex; /* Serve para alinhar */
+    flex-direction: column; /* Deixar os itens em coluna */
+    padding: 10px; /* Distância do conteúdo e as bordas */
+    overflow: hidden;
+}
+
+
+.container-top {
+    width: 100%; /* Ocupar o espaço da tela em largura*/
+    display: flex; 
+    align-items: center; /* Eixo  */
+}
+
+.logo {
+    height: 40px; /* Aumenta a altura */
+    margin: 30px 0; /* Margem dos quatro elementos. Nesse caso, o 30 é Top e Bot; o 0 é Right e Left */
+}
+
+nav {
+    width: 100%; /* Ocupar a largura toda */
+    text-align: right; /* Jogar o texto para direita */
+}
+
+li {
+    list-style: none; /* Tirar as bolinhas da lista */
+    display: inline; /* Fica alinha em linha */
+    margin-right: 30px; /* Margem da direita */
+}
+
+.nav-link {
+    cursor: pointer; /* Mudar o cursor ao passar por cima */
+    text-decoration: none; /* Tirar o sublinhado do texto */
+    color: black; /* Mudar a cor */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.nav-link:hover { /* O Hover serve para quando passar o mouse, mudar a cor, opacidade, etc  */
+    color: #FB5A8F; 
+}
+
+/* ---------------------- MID ---------------------- */
+
+.container-middle-1 {
+    display: flex;
+    justify-content: space-between; /* Separar os itens com cada um indo para um lado */
+    align-items: center; 
+    margin: 100px 0;
+    
+}
+
+.middle-items {
+    margin-left: 50px;
+    position: relative;
+}
+
+.middle-items::before { /* Antes do negócio */
+    content: ""; /* Contéudo. Aqui n tem nada */
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#ff469f, #ff6062);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #707070;
+    font-weight: 300; /* Deixa a font mais grossa ou fina, o 900 é o max */
+    margin: 20px 0;
+}
+
+.middle-items p {
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 350;
+}
+
+h4 {
+    font-size: 20px;
+    color: #000;
+    margin: 30px 0;
+}
+
+.buy {
+    width: 140px;
+    border: none; /* Tirar a borda */
+    color: white;
+    padding: 12px 10px;
+    outline: none; /* Ao clicar não ficar uma borda preta */
+    background: linear-gradient(to right, #fb5283, #ff3527); /* Mudar o background só que com degradê */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.buy img {
+    width: 30px;
+    display: none;
+}
+
+.buy:hover {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buy:hover img {
+    display: block;
+
+}
+
+.container-middle-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.controller {
+    width: 90%; /* Ocupar o espaço da tela em largura*/
+    z-index: 2; /* Assume quem fica na frente. Esse é o 2, então vai ficar na frente do de baixo */
+    animation: moveController 2s infinite alternate ease-in-out
+}
+
+.add-cart {
+    z-index: 2;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.add-cart img {
+    width: 100%;
+    height: 100%;
+    max-width: 55px;
+}
+
+.color-box {
+    position: absolute; /* Vai ficor no local que eu quero */
+    right: 0; /* Tudo para direita na caixa */
+    top: 0; /* Tudo para cima na caixa */
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    height: 100%;
+    width: 80%;
+    border-radius: 20px 0 0 20px; /* Arredondar a borda na ordem. A ordem é cima esquerda e segue sentido horário */
+    z-index: 1;
+    transform: translateX(150px);
+}
+
+/* ---------------------- BOT ---------------------- */
+
+.container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.tw-logo {
+    height: 20px;
+    width: 22px;
+    margin: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Arrumando para o Media */
+.menu-icon {
+    width: 25px;
+    margin-right: 15px;
+    display: none;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 760px) {
+    .container-main {
+    margin: 0;
+    border-radius: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    }
+
+    .container-middle-1 {
+        flex-direction: column-reverse;
+    }
+
+    .container-middle-2 {
+        margin-bottom: 50px;
+    }
+
+    .color-box {
+        transform: translateX(70px);
+    }
+
+
+    #menu-list {
+        position: relative;
+        top: 60px;
+        left: 60px;
+        overflow: hidden;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .link {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+@keyframes moveController {
+    from {
+        transform: translate(-5%, -5%) rotate(-5deg);
+    }
+
+
+
+
+}

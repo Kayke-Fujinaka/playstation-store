@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> <!-- Parte do site invisível -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation Store</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Linkar o CSS3 no HTML5 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"> <!-- Colocar a fonte Roboto -->
+</head>
+
+<body> <!-- Parte do site visível -->
+
+    <!-- TOP -->
+
+    <div class="container-main"> <!-- Caixa principal que contém todo o contéudo do site -->
+
+        <div class="container-top"> <!-- Caixa que contém a logo e os menu de navegação -->
+            <img class="logo" src="./img/logo.png" alt="Playstation Logo"> <!-- Logo -->
+            <nav> <!-- Menu de navegação -->
+                <ul id="menu-list"> <!-- Lista desordenada -->
+                    <li class="link"><a class="nav-link" href="#">Consoles</a></li> <!-- Itens da Lista -->
+                    <li class="link"><a class="nav-link" href="#">Acessórios</a></li> <!-- Itens da Lista -->
+                    <li class="link"><a class="nav-link" href="#">Controles</a></li> <!-- Itens da Lista -->
+                    <li class="link"><a class="nav-link" href="#">Outros</a></li> <!-- Itens da Lista -->
+                </ul>
+            </nav>
+            <img class="menu-icon" src="./img/menu.png" alt="menu icon" onclick="showMenu()">
+        </div>
+
+        <!-- MID -->
+
+        <div class="container-middle-1">  <!-- Caixa do meio que contém as informações do controle e o controle -->
+            <div class="middle-items"> <!-- Caixa com as informações -->
+                <h2>PS5 Dualshock</h2>
+                <h3>Wirelles Controller for PlayStation</h3>
+                <p>Controle Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="buy">Comprar Agora <img src="./img/arrow.png" alt="arrow"></button>
+            </div>
+
+            <div class="container-middle-2"> <!-- Caixa com o controle e o botão de compra -->
+                <img class="controller" src="./img/controller.png" alt="PS5 Controller">
+                <div class="color-box"></div>
+                <button class="add-cart">
+                    <img src="./img/add.png" alt="Add to Cart Icon">
+                </button>
+            </div>
+        </div>
+
+        <!-- BOT -->
+
+        <div class="container-bottom"> <!-- Footer ou o rodapé de um site -->
+            <img class="img" src="./img/fb.png" alt="Facebook Logo"> 
+            <img class="img" src="./img/ig.png" alt="Instagram Logo">
+            <img class="tw-logo" src="./img/tw.png" alt="Twitter Logo">
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+    const menuList = document.getElementById("menu-list")
+    menuList.style.maxHeight = "0px"
+
+    function showMenu(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "120px"
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+
+
+
+</script> <!-- JavaScript -->
+
+</html>
