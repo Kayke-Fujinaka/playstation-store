@@ -1,6 +1,6 @@
 # Playsation Store
 
-<img src="./img/gif.gif" width="800px" height="400px" alt="Gif do Teste">
+<img src="./img/gif.gif" alt="Gif do Teste">
 
 >  The site consists of a PlayStation store, which is featuring a PS5 DualShock controller purchase page.
 
