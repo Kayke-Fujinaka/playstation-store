@@ -1,4 +1,4 @@
-# Playsation Store
+<h1 align="center">🎮 Playstation Store</h1>
 
 <img src="./img/gif.gif" alt="Gif do Teste">
 
@@ -13,12 +13,13 @@ The application was guided by my mentor Rodolfo Mori in the 30D project carried 
 The project only has a single page.
 
 - **Home Page:** The page is a representation of a playstation controller store.
+
 ## :dart: Features ##
 
-:heavy_check_mark: Estruturação da Página;\
-:heavy_check_mark: Estilização da Página;\
-:heavy_check_mark: Deixando a página responsiva;\
-:heavy_check_mark: Finalizado;
+:heavy_check_mark: Structure;\
+:heavy_check_mark: Styled;\
+:heavy_check_mark: Apply JavaScript;\
+:heavy_check_mark: Finish;
 
 ## :rocket: Technologies ##
 
